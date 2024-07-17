@@ -1,21 +1,21 @@
-# Como instalar/configurar para o `UFW (Uncomplicated Firewall)` no `Linux Ubuntu`
+# Como instalar/configurar/usar para o `UFW (Uncomplicated Firewall)` no `Linux Ubuntu`
 
 ## Resumo
 
-Neste documento estão contidos os principais comandos e configurações para instalar/configurar o `UFW (Uncomplicated Firewall)` no `Linux Ubuntu`.
+Neste documento estão contidos os principais comandos e configurações para instalar/configurar/usar o `UFW (Uncomplicated Firewall)` no `Linux Ubuntu`.
 
 ## _Abstract_
 
-_This document contains the main commands and settings to install/configure the `UFW (UNcomplicated Firewall)` on `Linux Ubuntu`._
+_This document contains the main commands and settings to configure/install/use the `UFW (UNcomplicated Firewall)` on `Linux Ubuntu`._
 
 ## Descrição
 
 O `UFW (Uncomplicated Firewall)` é uma interface de usuário para o sistema de firewall iptables do `Linux`, projetada para tornar a gestão de regras de firewall mais simples e acessível. Ele permite que usuários, mesmo aqueles com conhecimento limitado em segurança de rede, configurem regras de firewall de maneira fácil e intuitiva, oferecendo um método direto para habilitar ou desabilitar o tráfego de rede em sistemas `Ubuntu` e outras distribuições `Linux` baseadas no Debian.
 
 
-## 1. Instalar o `UFW (Uncomplicated Firewall)` no `Linux Ubuntu` (caso ainda não esteja instalado) [1]
+## 1. Configurar/Instalar/Usar o `UFW (Uncomplicated Firewall)` no `Linux Ubuntu` (caso ainda não esteja instalado) [1]
 
-Para ativar o firewall no `Ubuntu 22.04 LTS`, você pode usar o `UFW (Uncomplicated Firewall)`, que é uma interface mais amigável para gerenciar o iptables, o sistema de firewall do `Linux`. Siga as etapas abaixo:
+Para ativar o _firewall_ no `Ubuntu 22.04 LTS`, você pode usar o `UFW (Uncomplicated Firewall)`, que é uma interface mais amigável para gerenciar o iptables, o sistema de _firewall_ do `Linux`. Siga as etapas abaixo:
 
 1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
 
@@ -39,26 +39,18 @@ Para ativar o firewall no `Ubuntu 22.04 LTS`, você pode usar o `UFW (Uncomplica
     2.8 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update`. Digite o seguinte comando e pressione `Enter`: `sudo apt full-upgrade -y`
     
 
-3. Instale o UFW com o comando: `sudo apt install ufw -y`
+3. **Instale o `UFW` com o comando**: `sudo apt install ufw -y`
 
-4. **Ativar o UFW:** Para ativar o UFW, execute o comando: `sudo ufw enable`
+4. **Ativar o UFW**: Para ativar o `UFW`, execute o comando: `sudo ufw enable`
 
-5. **Verificar o status do UFW**: Você pode verificar o status do UFW a qualquer momento usando: `sudo ufw status`
+5. **Verificar o status do `UFW`**: Você pode verificar o status do `UFW` a qualquer momento usando: `sudo ufw status`
 
-Aqui estão os comandos correspondentes para cada etapa:
+Depois de ativar o `UFW`, você pode começar a adicionar regras para permitir ou bloquear tráfego específico, conforme necessário.
 
-## 1.1 Comentários sobre os comandos
 
-- **`sudo apt update`:** Este comando atualiza a lista de pacotes disponíveis para instalação.
-- **`sudo apt install ufw`:** Este comando instala o pacote UFW.
-- **`sudo ufw enable`:** Este comando ativa o firewall UFW.
-- **`sudo ufw status`:** Este comando mostra o status atual do firewall, incluindo quais portas estão abertas e quais regras estão ativas.
+## 2. Código completo para configurar/instalar/usar
 
-Depois de ativar o UFW, você pode começar a adicionar regras para permitir ou bloquear tráfego específico, conforme necessário.
-
-## 2. Código completo
-
-Para instalar o `ufw` no `Linux Ubuntu` sem precisar digitar linha por linha, você pode seguir estas etapas:
+Para configurar/instalar/usar o `ufw` no `Linux Ubuntu` sem precisar digitar linha por linha, você pode seguir estas etapas:
 
 1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
 
